@@ -1,9 +1,12 @@
 body , html{
     padding: 0; /*Les padding propriétés CSS sont utilisées pour générer de l'espace autour du contenu d'un élément, à l'intérieur des bordures définies*/
     margin: 0; /*Les margin propriétés CSS sont utilisées pour créer un espace autour des éléments, en dehors de toute bordure définie*/
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     margin: auto;
+    position: relative;/*Un élément avec position: relative;est positionné par rapport à sa position normale*/
+    z-index: 999;
 }

@@ -1,13 +1,64 @@
 .header{
     height: 450px;
     width: 100%;
+    background-color: rgb(62, 57, 107);
+    position: relative;
+}
+.header_mask{
+    position: absolute;
+    bottom: 0;
+    background: 0 0;
+    height: 42px;
+    width: 100%;
+    z-index: 10;
+}
+.header_texture{
+    width: 100%;
+    height: 100%;
+    position: absolute;/* Un élément avec position: absolute;est positionné par rapport à l'ancêtre positionné le plus proche (au lieu d'être positionné par rapport à la fenêtre, comme fixe).*/
+    top: 0;left: 0;
+    background: url('../images/917979.jpg') center no-repeat;
+    background-size: cover;
+    z-index: 1;/*hadi bax nt7kmo wash iban fog ola lta7t*/
+    opacity: 0.6;/*color dyl image*/
 }
 
 .header_navbar{
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex; /*Displays an element as a block-level flex container (tat khalik txuf dik navbar accueil fl fo9)*/
     flex-direction: row;/*iban dik xi f ligne wa7d  */
     justify-content: space-between; /*aydir wa7d espace bin manga o dik navbar*/
     align-items: center;
+}
+.header_navbar-logo-title{
+    size: 28px;
+    color:#fff;
+}
+
+.header_navbar-menu-link{
+    margin-left: 34px; /*separer b espace bin Accueil et Articles et..*/
+    color:#fff;
+    text-decoration: none;
+}
+
+.header_slogan{
+    text-align: center;
+    margin-top: 60px;
+}
+.h_slogan-title{
+    color:#fff;
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.h_slogan-btn{
+    color:#fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 100px;
+    background: #f39c12;
+
 }
