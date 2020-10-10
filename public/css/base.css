@@ -1,4 +1,9 @@
 body , html{
     padding: 0; /*Les padding propriétés CSS sont utilisées pour générer de l'espace autour du contenu d'un élément, à l'intérieur des bordures définies*/
-    margin: 0; /*Les marginpropriétés CSS sont utilisées pour créer un espace autour des éléments, en dehors de toute bordure définie*/
+    margin: 0; /*Les margin propriétés CSS sont utilisées pour créer un espace autour des éléments, en dehors de toute bordure définie*/
+}
+
+.container{
+    width: 80%;
+    margin: auto;
 }

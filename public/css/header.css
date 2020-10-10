@@ -1,0 +1,13 @@
+.header{
+    height: 450px;
+    width: 100%;
+}
+
+.header_navbar{
+    width: 100%;
+    height: 80px;
+    display: flex; /*Displays an element as a block-level flex container (tat khalik txuf dik navbar accueil fl fo9)*/
+    flex-direction: row;/*iban dik xi f ligne wa7d  */
+    justify-content: space-between; /*aydir wa7d espace bin manga o dik navbar*/
+    align-items: center;
+}
