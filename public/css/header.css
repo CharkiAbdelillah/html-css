@@ -31,11 +31,17 @@
     justify-content: space-between; /*aydir wa7d espace bin manga o dik navbar*/
     align-items: center;
 }
-.header_navbar-logo-title{
+.header_navbar-logo-title {
     size: 28px;
     color:#fff;
 }
-
+.header_navbar-menu-link-search{
+    margin-left: 34px; /*separer b espace bin Accueil et Articles et..*/
+    border: 1px solid rgb(62, 57, 107);
+    text-decoration: none;
+    background-color: #f1f1f1;
+    border-radius:10px;
+}
 .header_navbar-menu-link{
     margin-left: 34px; /*separer b espace bin Accueil et Articles et..*/
     color:#fff;
@@ -60,5 +66,5 @@
     padding: 15px 20px;
     border-radius: 100px;
     background: #f39c12;
-
 }
+
