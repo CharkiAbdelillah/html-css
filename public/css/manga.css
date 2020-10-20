@@ -1,0 +1,146 @@
+.mangas{
+ text-align: center;   
+ padding-top: 30px;
+ padding-bottom: 30px;
+ /* background-color: red; */
+}
+.mangas_title{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    /* border-bottom: 3px solid #f39c12; */
+    border-bottom: 3px solid #6cccc6;
+    display: inline;/*bax ibano liya fl bdiya odik khat limoni may baxnx kaml */
+    font-size: 30px;
+}
+
+.mangas_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:50px;
+}
+.mangas_inter-items{
+    /* display: flex; */
+    padding-top: 30px;
+    /* text-align: center; */
+    position: relative;
+    /* border: 3px solid #000000; */
+}
+.manga_inter{
+    width: 60%;
+    /* height: 200px; */
+    /* border-radius: 5px; */
+    position: relative;
+    /* overflow: hidden; */
+    /* cursor: pointer; */
+    /* border: 3px solid #73AD21; */
+   /* top: 30px; */
+}
+
+.manga_images-title{
+    color: #333;
+    font-size: 25px;
+    /* border: 3px solid #73AD21; */
+    position: absolute;
+    bottom: 320px;
+    left: 17.5%;
+    margin: 0;
+    font-size: 25px;
+    /* font-style: oblique; */
+}
+.manga_images{
+    /* margin-right: auto; */
+    width: 35%;
+    height: 70%;
+    /* display: flex; */
+    margin: 0;
+    padding: 0;
+    left: 65%;
+    bottom: 18px;
+    /* top: 1px; */
+    /* border: 3px solid #73AD21; */
+    position: absolute;
+    background-image: url(../images/image\ 4.png);
+    background-size: cover;
+    box-shadow: 1px 2px 10px 5px #6cccc6;
+    animation: slider 10s infinite linear ;
+    cursor: pointer;
+}
+@keyframes slider{
+0%, 20%, 100%{background-image:url(../images/image\ 4.png);}
+35%{background-image: url(../images/image\ 7.png);}
+50%{background-image: url(../images/thumb-350-838440.png);}
+75%{background-image: url(../images/image\ 6.png);}
+}
+.mangas_inter-items:hover .manga_images{ /*hadi tat gol fax n7at sorie 3la khana dyl manga_inter-item sir liya class manga_images o stopper anumation*/
+    animation: none;
+}
+.mangas_inter-title{
+    margin: 0;
+    color: #333;
+    font-size: 25px;
+}
+.mangas_inter-subtitle{
+margin: 0;
+padding: 0;
+font-size: 15px;
+font-style: italic;
+opacity: 0.8;
+}
+.manga_inter-content{
+    justify-content: center;
+    text-align: justify;
+    line-height: 28px;
+}
+.manga{
+    width: 25%;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.manga_filter{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;left: 0;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4));
+}
+.manga_name{
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    top:5px;
+}
+.manga_icon{
+    position: absolute;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+.manga:hover .manga_icon{ /*hadi tat gol fax n7at sorie 3la khana dyl manga sir liya class icon ord liya tra..Y(0) bax twali tban 3adiya dik ixon*/
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 1220px){
+    .manga{
+    width: 400px;
+    /* z-index: 10000; */
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    }
+
+}

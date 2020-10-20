@@ -3,7 +3,24 @@
     width: 100%;
     background-color: rgb(62, 57, 107);
     position: relative;
+    z-index: 1000;
 }
+.header_connexion{
+    height: 320px;
+}
+.header_connexion .h_slogan-title{
+    margin-top: 10px;
+}
+.header_connexion .header_slogan{
+    margin-top: 10px;
+}
+
+ .header_navbar-menu-link-a:hover,.header_navbar-menu-link-a:hover {
+    font-size: 20px;
+}
+ /* {
+    font-size: 20px;
+} */
 .header_mask{
     position: absolute;
     bottom: 0;
@@ -24,6 +41,7 @@
 }
 
 .header_navbar{
+    margin-left: 20px;
     width: 100%;
     height: 100px;
     display: flex; /*Displays an element as a block-level flex container (tat khalik txuf dik navbar accueil fl fo9)*/
@@ -36,18 +54,36 @@
     color:#fff;
 }
 .header_navbar-menu-link-search{
+    /* float: right; */
     margin-left: 34px; /*separer b espace bin Accueil et Articles et..*/
     border: 1px solid rgb(62, 57, 107);
     text-decoration: none;
     background-color: #f1f1f1;
     border-radius:10px;
+    position: relative;
+    /* padding-top: 2px; */
+}
+.header_navbar-menu-link-search-icon{
+    /* margin-left: 34px; separer b espace bin Accueil et Articles et.. */
+    color:#fff;
+    text-decoration: none;
+    position: absolute;
+    /* left:1200px; */
+    right:55px;
+    /* bottom: 200px; */
+    top:62px;
+    /* padding-bottom: 35px;  */
 }
 .header_navbar-menu-link{
     margin-left: 34px; /*separer b espace bin Accueil et Articles et..*/
     color:#fff;
     text-decoration: none;
 }
-
+.header_navbar-menu-link-a{
+    margin-left: 34px; /*separer b espace bin Accueil et Articles et..*/
+    color:#fff;
+    text-decoration: none;
+}
 .header_slogan{
     text-align: center;
     margin-top: 60px;
@@ -60,11 +96,51 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.h_slogan-btn{
-    color:#fff;
-    text-decoration: none;
-    padding: 15px 20px;
-    border-radius: 100px;
-    background: #f39c12;
+ 
+.nav_area:after{
+    content: '';
+    clear: both;
+    display: block;
 }
-
+.nav_area ul{
+    list-style: none;
+    /* margin: 0; */
+    /* width: 100%; */
+}
+.nav_area > ul >li{
+    float: left;
+    position: relative;
+}
+.nav_area ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+}
+.nav_area ul li:hover a{
+    background: #34495a;
+}
+.nav_area ul ul{
+    position: absolute;
+    padding:0;
+    min-width: 160px;
+    display: none;
+    top: 100%;
+    left:0;
+}
+.nav_area ul li:hover > ul{
+    display: block;
+}
+.nav_area ul ul li:hover a{
+    background: #262626;
+}
+.nav_area ul ul li{
+    position: relative;
+}
+.nav_area ul ul ul{
+    top: 0;
+    left: 100%;
+}
+.nav_area ul ul ul li:hover a{
+    background: #34495a;
+}

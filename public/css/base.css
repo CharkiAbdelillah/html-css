@@ -2,11 +2,32 @@ body , html{
     padding: 0; /*Les padding propriétés CSS sont utilisées pour générer de l'espace autour du contenu d'un élément, à l'intérieur des bordures définies*/
     margin: 0; /*Les margin propriétés CSS sont utilisées pour créer un espace autour des éléments, en dehors de toute bordure définie*/
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 .container{
+    /* padding:40px; */
     width: 90%;
     margin: auto;
     position: relative;/*Un élément avec position: relative;est positionné par rapport à sa position normale*/
     z-index: 999;
+}
+.container_text{
+    width: 70%;
+    margin: auto;
+    position: relative;/*Un élément avec position: relative;est positionné par rapport à sa position normale*/
+    z-index: 999;
+}
+.btn{
+    color:#fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 3px;
+    background: #6cccc6;
+    border: 2px solid #6cccc6;
+    
+}
+.btn:hover{
+    color: #6cccc6;
+    background: transparent;
 }
